@@ -1,0 +1,95 @@
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Playfair Display', serif;
+font-family: 'Ubuntu', sans-serif; */
+
+.container {
+  margin: 0 auto;
+  padding: 0 70px;
+  max-width: 1280px;
+}
+
+.header__image {
+  width: 100%;
+  height: auto;
+}
+
+.header__content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: baseline;
+  font-size: 24px;
+  font-family: 'Inconsolata', monospace;
+  text-transform: uppercase;
+}
+
+.nav__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.logo__link {
+  font-size: 24px;
+  font-family: 'Inconsolata', monospace;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-decoration: line-through;
+}
+
+.nav__item {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+}
+
+.page__section--title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main__content {
+  padding: 0 40px;
+}
+
+.page__section--title-main {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.section__card {
+  padding-top: 20px;
+}
+
+.section__content {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  font-kerning: 24;
+}
+
+.section__photo {
+  width: 100%;
+  height: auto;
+  transition: transform 1s linear;
+}
+
+.section__photo:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.section__gallery {
+  display: flex;
+  column-gap: 60px;
+}
+
+@media (max-width: 640px) {
+  .section__gallery {
+    flex-direction: column;
+    
+}
