@@ -160,12 +160,15 @@ body {
 .section__article {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  column-gap: 25px;
+  margin: 0 80px;
 }
+
 .page__sidebar {
   position: sticky;
   top: 0;
-  padding: 15px;
-  height: 110vh;
+  padding: 25px;
+  height: 1000px;
 }
 
 .section__subscribe {
@@ -236,6 +239,12 @@ body {
     padding: 0 40px;
     margin: 40px 0 0 0;
   }
+
+  .section__article {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 .slider_wrapper {
   display: flex;
@@ -264,11 +273,12 @@ body {
 
 .slider-button {
   height: 50px;
+  position: absolute;
 }
 
 .section__headers {
+  margin: 0 ;
   padding: 50px 70px;
-  max-width: 1280px;
   background-color: lightgrey;
 }
 .section__headers-image {
@@ -281,6 +291,9 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 40px;
+}
+.section__headers-title {
+  font-size: 18px;
 }
 .section__comment {
   display: grid;
@@ -315,4 +328,8 @@ body {
     flex-direction: row;
     justify-content: center;
   }
+}
+
+.centered {
+  text-align: center;
 }
